@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alfredou">
+    <meta name="description" content="Lyson_po, tattoos y diseño">
+    <title>Lyson_p0 | Inicio</title>
+    <link rel="icon" href="IMG/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <style>
+        body { background: url("IMG/FondoTattoStudio.jpg") no-repeat center center/cover fixed; }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="cerrar-popup">
+    <div class="popup-overlay">
+        <div class="popup">
+            <label for="cerrar-popup" class="cerrar">&times;</label>
+            <img src="IMG/ALERTA.jpg" alt="Anuncio importante">
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <img src="IMG/logo.png" class="logo" alt="Logo Lyson_p0">
+            <span class="nombre"><a href="INDEX.html">Lyson_p0</a></span>
+        </div>
+        <div class="nav-right">
+            <a href="https://www.instagram.com/lyson_p0/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-2xl nav-social-icon"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lyson_tatto" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok fa-xl nav-social-icon"></i>
+            </a>
+            <div class="hamburger" onclick="abrirMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay" onclick="cerrarMenu()"></div>
+    <div class="menu-panel" id="menu">
+        <div class="close" onclick="cerrarMenu()">&times;</div>
+        <div class="menu-links">
+            <a href="INDEX.html">INICIO</a>
+            <a href="EXTRAS/PIEZASUNICAS.html">PIEZAS UNICAS</a>
+            <a href="https://wa.me/qr/DFMKLPZRDBGQI1">CONTÁCTANOS</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <img src="IMG/jeff.gif" alt="gif flotante" class="floating-gif">
+        
+        <div class="video-marco spacer-top">
+            <video src="VIDEOS/VideoIndex.mp4" autoplay loop muted playsinline></video>
+        </div>
+        
+        <div class="text-center spacer-title">
+            <h2 class="slider-title shadow-text">Conoce nuestro Trabajo</h2>
+        </div>
+        <div class="slider-container">
+            <button class="btn prev" onclick="mover(-1)" aria-label="Anterior">&#10094;</button>
+            <div class="slider" id="slider">
+                <img src="IMG/tatoo1.jpg" alt="Tatuaje 1">
+                <img src="IMG/tatoo2.jpg" alt="Tatuaje 2">
+                <img src="IMG/tatoo3.jpg" alt="Tatuaje 3">
+                <img src="IMG/tatoo4.jpg" alt="Tatuaje 4">
+                <img src="IMG/tatoo5.jpg" alt="Tatuaje 5">
+                <img src="IMG/tatoo6.png" alt="Tatuaje 6">
+                <img src="IMG/tatoo7.jpg" alt="Tatuaje 7">
+                <img src="IMG/tatoo8.jpg" alt="Tatuaje 8">
+                <img src="IMG/tatoo9.png" alt="Tatuaje 9">
+                <img src="IMG/tatoo10.jpeg" alt="Tatuaje 10">
+                <img src="IMG/tatoo11.png" alt="Tatuaje 11">
+                <img src="IMG/tatoo12.jpg" alt="Tatuaje 12">
+                <img src="IMG/tatoo13.jpg" alt="Tatuaje 13">
+                <img src="IMG/tatoo14.jpg" alt="Tatuaje 14">
+                <img src="IMG/tatoo15.jpg" alt="Tatuaje 15">
+                <img src="IMG/tatoo16.jpg" alt="Tatuaje 16">
+                <img src="IMG/tatoo17.png" alt="Tatuaje 17">
+            </div>
+            <button class="btn next" onclick="mover(1)" aria-label="Siguiente">&#10095;</button>
+        </div>
+        <div class="container-videos-verticales">
+            <div class="info-videos">
+                <h3 class="slider-title shadow-text text-center" style="margin-bottom: 20px;color: #a41e37;">Cicatrizados</h3>
+                <section class="videos-dobles">
+                    <div class="video-duo">
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion1.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion2.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                    </div><br>
+                    <div class="video-duo">
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion3.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion4.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                    </div><br>
+                    <div class="video-duo">
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion5.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="video-wrapper-vertical">
+                            <video src="VIDEOS/Cicatrizacion6.mp4" autoplay loop muted playsinline></video>
+                        </div>
+                    </div>
+                </section>
+                <p class="promo-text shadow-text text-center" style="margin-top: 20px;">¿Qué esperas para tu proximo tatuaje?</p>
+            </div>
+        </div>     
+    </main>
+
+    <footer class="fp-footer">
+        <div class="fp-container">
+            <div class="fp-brandCol">
+                <div class="fp-brandHead">
+                    <i class="material-symbols-outlined">kid_star</i>
+                    <h3>Lyson_p0<span> TATTO</span></h3>
+                </div>
+                <p class="fp-desc">Diseño de tatuajes · compromiso y calidad.</p>
+                <ul class="fp-contactList">
+                    <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/lyson_p0/" target="_blank">Lyson_p0</a></li>
+                    <li><i class="fa-brands fa-tiktok"></i> <a href="https://www.tiktok.com/@lyson_tatto" target="_blank">Lyson_tatto</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/qr/DFMKLPZRDBGQI1" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="fp-locationBox">
+                <div class="fp-locTitle"><i class="fas fa-location-dot"></i><span>Estudio</span></div>
+                <address class="fp-address">
+                    <i class="fas fa-city"></i> Calle Primavera, Villas Petroecuador<br>
+                    <i class="fas fa-map-pin"></i> Esmeraldas, Esmeraldas<br>
+                    <i class="fas fa-clock"></i> Lun–Vie 7:00 – 22:00
+                </address>
+            </div>
+        </div>
+        <div class="fp-bottomBar">
+            <div class="fp-copy"><i class="far fa-copyright"></i> 2026 LysonTatto · Todos los derechos reservados</div>
+        </div>
+    </footer>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById("menu").classList.add("active");
+            document.getElementById("overlay").classList.add("active");
+        }
+        function cerrarMenu() {
+            document.getElementById("menu").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+        }
+        
+        const slider = document.getElementById("slider");
+        let posicion = 0;
+        
+        function mover(direccion) {
+            const imagenes = slider.querySelectorAll("img");
+            if(imagenes.length === 0) return;
+            
+            const anchoImagen = imagenes[0].getBoundingClientRect().width + 12;
+            const anchoContenedor = slider.parentElement.getBoundingClientRect().width;
+            const visibles = Math.floor(anchoContenedor / anchoImagen) || 1;
+            const maximo = imagenes.length - visibles;
+            
+            posicion += direccion;
+            if (posicion < 0) posicion = 0;
+            if (posicion > maximo) posicion = maximo;
+            
+            slider.style.transform = `translateX(-${posicion * anchoImagen}px)`;
+        }
+        
+        window.addEventListener('resize', () => mover(0)); // Recalcula si giras la pantalla
+    </script>
+</body>
+</html>
